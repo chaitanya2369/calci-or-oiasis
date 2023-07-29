@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/icon.jpg" type="image/x-icon"> 
+</head>
+<body>
+    <div class="container">
+        <div class="Converter">
+            <header class="header">
+                <div id="clock"></div>
+                <h3 id="heading">Temperature converter</h3>
+                <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-bell-slash-fill"></i>
+                    <i class="bi bi-battery-full"></i>
+                </div>
+            </header>
+            <main>
+                <div class="total">
+                    <div class="tempin">
+                        <label for="tempinput">Enter the temperature</label><br>
+                        <input type="number" name="tempinput" id="temperature-input">
+                    </div>
+                    <div class="options">  
+                        <div class="from-input">
+                            <label for="from">From</label><br>
+                            <select name="from" id="from-option">
+                                <option value="celcius">celcius</option>
+                                <option value="fahrenheit">fahrenheit</option>
+                                <option value="kelvin">kelvin</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <label for="to">To</label><br>
+                            <select name="to" id="to-option">
+                                <option value="celcius">celcius</option>
+                                <option value="fahrenheit">fahrenheit</option>
+                                <option value="kelvin">kelvin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button-convert">
+                        <button class="convert" id="btn" onclick="temperature()">convert</button>
+                    </div>
+                    <div class="result-div">
+                        <label for="result">Result</label>
+                        <div id="result"></div>
+                    </div>
+                </div>
+                </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
