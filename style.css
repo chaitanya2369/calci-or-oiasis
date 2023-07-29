@@ -42,6 +42,9 @@ i{
 label{
     color: rgb(18, 21, 26);
 }
+option{
+    color: black;
+}
 .tempin label{
     font-weight: 100;
     font-size: 20px;
